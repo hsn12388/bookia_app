@@ -7,9 +7,7 @@ class WelcomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(
-          image: DecorationImage(image: DecorationImage(image: image)),
-        ),
+        decoration: BoxDecoration(image: DecorationImage(image: image)),
       ),
     );
   }
