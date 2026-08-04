@@ -22,3 +22,7 @@ samples, guidance on mobile development, and a full API reference.
 dart run build_runner build --delete-conflicting-outputs
 
 ```
+
+```bash
+dart run easy_localization:generate --source-dir ./assets/translations -f keys -o locale_keys.g.dart -O lib/gen
+```

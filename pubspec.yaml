@@ -37,6 +37,7 @@ dependencies:
   flutter_screenutil: ^5.9.3
   easy_localization: ^3.0.8
   flutter_gen: ^5.15.0
+  flutter_bloc: ^8.1.6
 
 dev_dependencies:
   flutter_test:
@@ -55,39 +56,15 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
   uses-material-design: true
 
-  # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
     - assets/icons/
     - assets/translations/
 
-  # An image asset can refer to one or more resolution-specific "variants", see
-  # https://flutter.dev/to/resolution-aware-images
-
-  # For details regarding adding assets from package dependencies, see
-  # https://flutter.dev/to/asset-from-package
-
-  # To add custom fonts to your application, add a fonts section here,
-  # in this "flutter" section. Each entry in this list should have a
-  # "family" key with the font family name, and a "fonts" key with a
-  # list giving the asset and other descriptors for the font. For
-  # example:
-fonts:
-  - family: DM
-    fonts:            # ✅ مسافتين تحت family
-      - asset: android/assets/font/DMSerifDisplay-Italic.ttf
-      - asset: android/assets/font/DMSerifDisplay-Regular.ttf
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
-  #
-  # For details regarding fonts from package dependencies,
-  # see https://flutter.dev/to/font-from-package
+  fonts:
+    - family: DM
+      fonts:
+        - asset: assets/font/DMSerifDisplay-Italic.ttf
+        - asset: assets/font/DMSerifDisplay-Regular.ttf

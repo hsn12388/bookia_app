@@ -14,6 +14,9 @@ import 'package:flutter/widgets.dart';
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/back_s.png
+  AssetGenImage get backS => const AssetGenImage('assets/images/back_s.png');
+
   /// File path: assets/images/splash12.png
   AssetGenImage get splash12 =>
       const AssetGenImage('assets/images/splash12.png');
@@ -23,7 +26,7 @@ class $AssetsImagesGen {
       const AssetGenImage('assets/images/splashLogo.png');
 
   /// List of all assets
-  List<AssetGenImage> get values => [splash12, splashLogo];
+  List<AssetGenImage> get values => [backS, splash12, splashLogo];
 }
 
 class $AssetsTranslationsGen {
