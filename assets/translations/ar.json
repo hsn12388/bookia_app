@@ -1,5 +1,7 @@
 {
     "welcome_text": "أهلاً بك",
     "dark_mode": "الوضع الليلي",
-    "english_language": "الإنجليزية"
+    "english_language": "الإنجليزية",
+    "login":"تسجيل الدخول",
+    "register":"انشاء حساب"
 }

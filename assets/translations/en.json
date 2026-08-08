@@ -1,5 +1,7 @@
 {
     "welcome_text": "Welcome",
     "dark_mode": "Dark Mode",
-    "english_language": "English"
+    "english_language": "English",
+    "login": "Login",
+    "register": "Register"
 }
