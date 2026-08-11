@@ -11,7 +11,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 class BookiaApp extends StatelessWidget {
-  const BookiaApp({super.key});
+  final String? token;
+  const BookiaApp({super.key, this.token});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +33,9 @@ class BookiaApp extends StatelessWidget {
                 debugShowCheckedModeBanner: false,
                 theme: context.read<ThemeCubit>().appTheme,
                 onGenerateRoute: AppRouter.onGenerateRoute,
-                initialRoute: Routes.WelcomeScreen,
+                initialRoute: token == null
+                    ? Routes.WelcomeScreen
+                    : Routes.homeScreen,
               );
             },
           ),

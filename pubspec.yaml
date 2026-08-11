@@ -38,6 +38,9 @@ dependencies:
   easy_localization: ^3.0.8
   flutter_gen: ^5.15.0
   flutter_bloc: ^8.1.6
+  dio: ^5.11.0
+  pretty_dio_logger: ^1.4.0
+  shared_preferences: ^2.5.5
 
 dev_dependencies:
   flutter_test:
