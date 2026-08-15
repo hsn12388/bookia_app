@@ -1,5 +1,6 @@
 import 'package:bookia_app/core/theme/heilper/app_constants.dart';
 import 'package:bookia_app/core/theme/heilper/extentions.dart';
+import 'package:bookia_app/core/theme/networking/dio_factory.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:bookia_app/features/bookia_app.dart';
 import 'package:easy_localization/easy_localization.dart';
@@ -10,7 +11,7 @@ void main() async {
   await EasyLocalization.ensureInitialized();
   final SharedPreferences prefs = await SharedPreferences.getInstance();
   final String? token = await prefs.getString(AppConstants.userTokenKey);
-
+  DioFactory.init();
   runApp(
     EasyLocalization(
       supportedLocales: [Locale('en'), Locale('ar')],
